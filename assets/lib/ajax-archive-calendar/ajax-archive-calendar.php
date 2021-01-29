@@ -533,7 +533,7 @@ function ajax_ac_head() {
 		}
 		
 		#today a,#today span {
-			   background: none repeat scroll 0 0 #2cb2bc !important;
+			   background: none repeat scroll 0 0 #2cb2bc;
 			color: #FFFFFF;
 		}
 		#ajax_ac_widget #my_year {

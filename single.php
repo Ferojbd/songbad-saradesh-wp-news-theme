@@ -43,7 +43,7 @@
             <div class="rpt_info_section">
               <div class="rpt_name">
                 <p>
-                  <!-- <span style="display:block; margin-bottom:5px"><i style="color:#777" class="fa fa-user-circle-o"></i>&nbsp; </span> -->
+                  <span style="display:block; margin-bottom:5px"><i style="color:#777" class="fa fa-user-circle-o"></i>&nbsp; <?php the_author();?></span>
                 </p>
               </div>
               <div style="_display: table-cell; vertical-align: middle;padding: 5px 0px 0px 0px; height: auto; _padding-left: 10px; float:left;"><i class="fa fa-calendar" aria-hidden="true"></i>

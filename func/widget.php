@@ -46,7 +46,7 @@ function tritiyo_sidebar(){
 	  //'after_title' =>  '</h4><div class="fa-ul" style="margin-left: 0px;"><div class="widget-content">',	
 	  'before_widget' => '<div class="m-b-15"></div><div class="widget mt-2 mb-2">',
 	  'after_widget' => '</div></div>',
-	  'before_title' => '<div class="cat_summary_title"><h4>',
+	  'before_title' => '<div class="cat_summary_title"><h4 style="">',
 	  'after_title' => '</h4></div><div class="fa-ul" style="margin-left: 0px;"><div class="widget-content">',	
 	));	
 	/*

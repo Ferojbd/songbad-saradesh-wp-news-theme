@@ -1601,3 +1601,52 @@ span#printer_btn:hover i {
     clear: both;
 
 }
+
+/*/* Ajax Archive Calendar **/
+#ajax_ac_widget {
+    box-shadow: 0px 0px 5px 2px #ccc;
+    border-top: 0px;
+    font-size: 15px;
+    padding: 13px;
+    margin-bottom: 10px;
+}
+.select_ca {
+	overflow: hidden;
+    padding: 5px;
+    background: #ddd;
+}
+.select_ca #my_month {
+    float: left;
+    padding: 5px 5px;
+    font-size: 14px;
+}
+#ajax_ac_widget #my_year {
+    float: right;
+    padding: 5px 5px;
+    font-size: 14px;
+}
+#ajax_ac_widget th {
+    background: none repeat scroll 0 0 #214c83 !important;
+    color: #FFFFFF;
+    font-weight: normal;
+    padding: 5px 1px;
+    text-align: center;
+    font-size: 16px;
+}
+#today a, #today span {
+    background: none repeat scroll 0 0 #214c83 !important;
+    color: #FFFFFF;
+}
+#my_calender span {
+    display: block;
+    padding: 10px 5px !important;
+    width: 100% !important;
+}
+#ajax_ac_widget th {
+    background: none repeat scroll 0 0 #2cb2bc;
+    color: #FFFFFF;
+    font-weight: normal;
+    padding: 10px 5px !important;
+    text-align: center;
+    font-size: 16px;
+}

@@ -29,6 +29,7 @@ add_action('after_setup_theme' , 'aftertheme_default_functions');
 register_nav_menus( array(
     'primary' => __( 'Primary Menu', '' ),
     'secondary' => __( 'Secondary Menu', '' ),
+	'secondary_bottom' => __( 'Secondary Bottom Menu', '' ),
     'footer' => __( 'Footer Menu', '' ),
 ) );
 

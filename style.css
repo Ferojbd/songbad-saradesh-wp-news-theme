@@ -921,7 +921,7 @@ td {
     width: 100px;
     height: 100px;
     z-index: 9999;
-    background: url('https://www.odhikar.news/templates/adhikar-v1/images/vid_icon_s.png');
+    background: url('templates/riptware-v1/images/vid_icon_s.png');
 }
 .editor_picks_list .img .vicon:hover {
     position: absolute;
@@ -930,7 +930,7 @@ td {
     width: 100px;
     height: 100px;
     z-index: 9999;
-    background: url('https://www.odhikar.news/templates/adhikar-v1/images/vid_icon_s_hover.png');
+    background: url('templates/riptware-v1/images/vid_icon_s_hover.png');
 }
 
 .cat-post-footer-link {
@@ -978,7 +978,7 @@ a.cat-post-footer-link {
 }
 
 .app-container .android-aps-icon {
-    background: url('templates/adhikar-v1/images/mobile_app_122x76.png') 0 -38px no-repeat;
+    background: url('templates/riptware-v1/images/mobile_app_122x76.png') 0 -38px no-repeat;
     text-decoration: none;
     width: 122px;
     height: 38px;
@@ -986,7 +986,7 @@ a.cat-post-footer-link {
 }
 
 .app-container .ios-aps-icon {
-    background: url('templates/adhikar-v1/images/mobile_app_122x76.png') no-repeat;
+    background: url('templates/riptware-v1/images/mobile_app_122x76.png') no-repeat;
     text-decoration: none;
     width: 122px;
     height: 38px;

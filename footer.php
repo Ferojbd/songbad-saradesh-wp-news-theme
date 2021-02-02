@@ -17,7 +17,13 @@
                         </div>
                         <div class="col-md-10 col-sm-10">
                             <div class="app-container">
-                                
+                                <?php if($options['android_link'] && $options['ios_link']) { ?>
+									<h5>মোবাইল অ্যাপস ডাউনলোড করুন</h5>
+									<a rel="nofollow" class="ios-aps-icon" href="<?php echo $options['android_link'];?>" target="_blank">&nbsp;
+									</a>
+									<a rel="nofollow" class="android-aps-icon" href="<?php echo $options['ios_link'];?>" target="_blank">&nbsp;
+									</a>
+								<?php } ?>
                             </div>
                         </div>
                     </div>

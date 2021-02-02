@@ -152,7 +152,23 @@
                                     ?>
                                 </ul>
                             </div>
-
+							<div class="megaMenuBtm">
+							  <ul>
+								  <?php
+                                        wp_nav_menu( array(
+                                            'theme_location'  => 'secondary_bottom',
+                                            'depth'           => 1, // 1 = no dropdowns, 2 = with dropdowns.
+                                            'container'       => 'ul',
+                                            'container_class' => ' ',
+                                            'container_id'    => ' ',
+                                            'menu_class'      => ' ',
+                                            'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+                                            //'walker'          => new WP_Bootstrap_Navwalker(),
+                                        ) );
+                                    ?>						  
+							  </ul>
+						  </div>
+						  
                         </div>
                     </div>
                 </div>

@@ -74,6 +74,16 @@ if( class_exists( 'CSF' ) ) {
          'type'  => 'text',
          'title' => 'Youtube Url',     
         ),
+		 array(
+         'id'    => 'android_link',
+         'type'  => 'text',
+         'title' => 'Android App Url',     
+        ),
+		 array(
+         'id'    => 'ios_link',
+         'type'  => 'text',
+         'title' => 'Ios App Url',     
+        ),
         /*
          array(
          'id'    => 'footer-column',

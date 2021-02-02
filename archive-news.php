@@ -1,19 +1,21 @@
 <?php 
+
 /*
-Template Name: latest News
+Template Name: Archive News
 */
 
 get_header();?>
 
-<div class="homeTop">
+<div class="home_page_left">
     
 
     <!-- breadcrumb-->
-    <div class="hidden-print" xid="site_map">
+    <div class="hidden-print" id="site_map">
         <ol class="breadcrumb">
+        <li><a href="<?php bloginfo ('url');?>"><i class="fa fa-home"></i>&nbsp;প্রচ্ছদ</a></li>
             <li class="child">
                 <i class="fa fa-list"></i>&nbsp;
-                সর্বশেষ
+				আর্কাইভ
             </li>
         </ol>
         <div class="clr"></div>
@@ -22,25 +24,24 @@ get_header();?>
     <div id="main_content_list">
 	
         <div class="all_news_content_block">
-            <div class="">
+            <div class="row">
                 <?php 
                 //$day = date('j');
                 //query_posts('day='.$day);
                 //if (have_posts()) : while (have_posts()) : the_post();
                 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-                $latest_posts_args = new WP_Query(array(
-                    'posts_per_page' => 2,
-                    'order'=> 'DESC',
-                    'post_type' => 'post',
-                    'post_status' => 'publish',
-                    'paged' => $paged,
-                ));
-                if($latest_posts_args->have_posts()) : while($latest_posts_args->have_posts()) : $latest_posts_args->the_post()?>  
-                <div class="menu_news_list">
+                $popular_posts_args = new WP_Query (array(
+                                        'posts_per_page' => 2,
+                                        'meta_key' => 'nipun_post_views_count',
+                                        'orderby' => 'meta_value_num',
+                                        'order'=> 'DESC'
+                                    ));                        
+                if($popular_posts_args->have_posts()) : while($popular_posts_args->have_posts()) : $popular_posts_args->the_post()?> 
+                <div class="col-md-6 all_new">
                     <a href="<?php the_permalink();?>">
                         <div class="img">
-                            <img alt="" src="<?php the_post_thumbnail_url('large');?>" max-height="70">
-                        </div>
+                            <img src="<?php the_post_thumbnail_url('large');?>">
+                        </div><!--end img-->
                         <div class="content_sum_block">
                             <div class="hl">
                                 <h4><?php echo get_the_title();?></h4>
@@ -55,23 +56,24 @@ get_header();?>
                                     ?>
                                 </p>
                             </div>
-                        </div>
+                        </div><!--end content_sum_block-->
                     </a>
-                </div> <!-- end col-->
+                </div>
                 <?php endwhile; ?>	
             </div>
         </div>
     </div>
     
-    <div align="center">
-        <?php echo pagination( $paged, $latest_posts_args->max_num_pages); // Pagination Function?>
+    <div align="right">
+        <?php echo pagination( $paged, $popular_posts_args->max_num_pages); // Pagination Function?>
     </div>
 <?php endif; wp_reset_postdata(); ?>
 
 </div>
 
-<div class="homeTop">
-    <?php dynamic_sidebar('single-widget');?>
+<div class="home_page_right">
+    <?php //dynamic_sidebar('single-widget');?>
+	<?php the_widget ('ajax_ac_widget');?>
 </div>
 
 <?php get_footer();?>

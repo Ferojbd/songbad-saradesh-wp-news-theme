@@ -53,6 +53,9 @@
                   $postdate = get_the_date( 'l, S , M , Y' );
                   echo bn2enSomeCommonString($posttime);                                        
                 ?>
+				<?php 
+				nipun_set_post_views(get_the_ID()); 
+				$thispostview = nipun_get_post_views(get_the_ID());?>
               </div>
             </div>
 
